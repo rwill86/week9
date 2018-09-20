@@ -1,0 +1,13 @@
+<div class="mainContent">
+     <div class="h1">Update Product</div>
+	 <div class="list" *ngFor="let product of products;">
+	     <div class="productList">
+		     <div class="p">Product ID: {{product._id}}</div>
+	         <input type="text" class="input" name="name" [(ngModel)]="product.name"/>
+		     <input type="text" class="input" name="price" [(ngModel)]="product.price"/>
+		     <input type="text" class="input" name="description" [(ngModel)]="product.description"/>
+		     <button (click)="updateProduct(product)" type="submit" name="submit" class="smallButton">Update</button>
+		     <button (click)="deleteProduct(product)" type="submit" name="submit" class="smallButton">Delete</button>
+		 </div>
+     </div>
+</div>

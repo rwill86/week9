@@ -1,0 +1,16 @@
+<div class="mainContent">
+     <div class="h1">Product List</div>
+	 <div class="searchbox">
+         <input type="text" class="input" id="search" placeholder="Search" [(ngModel)]="search"/>
+         <button (click)="getSearch()" type="submit" name="submit" class="searchButton">search</button>
+	 </div> 
+	 <div id="message"></div>
+	 <div class="list" *ngFor="let product of products;">
+	     <div class="productList">
+	     <div class="id">Product ID: {{product._id}}</div>
+	     <div class="name">Name: {{product.name}}</div>
+		 <div class="price">Price: {{product.price}}</div>
+		 <div class="description">Description: {{product.description}}</div>
+		 </div>
+     </div>
+</div>

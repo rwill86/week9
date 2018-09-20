@@ -1,0 +1,8 @@
+<div class="mainContent">
+     <div class="h1">Add Product</div>
+	 <div id="message"></div>
+     <input type="text" class="input" id="name" placeholder="Name" [(ngModel)]="name"/>
+     <input type="text" class="input" id="price" placeholder="Price" [(ngModel)]="price"/>
+     <input type="text" class="input" id="description" placeholder="Description" [(ngModel)]="description"/>
+     <button (click)="createProduct(name, price, description)" type="submit" name="submit" class="smallButton">Add</button>
+</div>
